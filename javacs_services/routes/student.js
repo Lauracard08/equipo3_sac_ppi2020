@@ -162,6 +162,10 @@ router.get('/:userId', function (req, res, next) {
     }
 });
 
+router.get('/student/checker', function(req, res, next) {
+    res.send("Student services are workink");
+});
+
 router.put('/progress/update/:userId', function (req, res, next) {
     const body = req.body;
     try {
