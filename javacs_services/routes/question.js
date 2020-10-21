@@ -49,6 +49,10 @@ router.get('/getCategory/:category', function (req, res, next) {
     }
 });
 
+router.get("/checker", function(req, res, next) {
+    router.search("Questions is working");
+});
+
 router.post('/', function (req, res, next) {
     const body = req.body;
     try {
