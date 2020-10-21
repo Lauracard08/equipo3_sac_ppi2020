@@ -16,6 +16,10 @@ router.get('/', function (req, res, next) {
   }
 });
 
+router.get('/users/checker', function(req, res, next) {
+  res.send("Users is working");
+});
+
 router.get('/getid/:email', function (req, res, next) {
   try {
     models.users.findAll({
