@@ -1,6 +1,6 @@
 language = "nodejs"
 #run = "cd"
  #run = "cd javacs_services && npm i"
-#run = "cd javacs_services && npm start"
-run = "cd Backend-Javacs  && npm i"
+run = "cd javacs_services && npm start"
+#run = "cd Backend-Javacs  && npm i"
 #run = "cd Backend-Javacs && npm run dev"

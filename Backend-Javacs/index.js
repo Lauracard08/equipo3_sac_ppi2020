@@ -1,19 +1,24 @@
-const express = require(`express`)
+const express = require("express")
+const path = require("path")
 const morgan = require("morgan")
 const app = express()
-
 
 //Middelwares
 app.use(morgan('dev'))
 app.use(express.json())
 
 //Routes
-app.use("/api/", require("./routes/estudiantes"))
+app.use("/api/", require("./routes/student"))
+app.use("/api/", require("./routes/question"))
+app.use("/api/", require("./routes/users"))
 
-app.get("/", function (req, res) {
-    res.send("Hola, ¡bienvenidos a Javacs!")
+app.get("/", (req, res) => {
+  res.send("Api CRUD")
 })
 
-app.listen(8030, function () {
-    console.log("El servidor esta corriedno en un puerto 8030")
+app.set("ABSOLUTE_PATH", `${__dirname}/`)
+app.set("PORT", 8081)
+
+app.listen(app.get("PORT"), () => {
+  console.log(`Servidor corriendo en el puerto ${app.get("PORT")}`)
 })

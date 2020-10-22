@@ -11,8 +11,8 @@ connection.connect((error) => {
       console.log(`Error en conexión a base de datos: ${error}`)
       return;
     }else{
-      console.log("Conexión extablecida con el servidor de MySQL")
+      console.log("Conexión establecida con el servidor de MySQL")
     }
 });
 
-module.exports =  {conne
+module.exports =  {connection: connection}
