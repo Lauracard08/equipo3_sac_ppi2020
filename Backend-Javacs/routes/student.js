@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const models = require('../models/index');
+const models = require('./../models/index');
 const request = require('request')
 
 router.post('/add', function (req, res, next) {
