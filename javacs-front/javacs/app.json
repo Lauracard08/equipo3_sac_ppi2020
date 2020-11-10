@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "javacs",
+    "slug": "javacs",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.javacs.javacs",
+      "config": {
+        "googleSignIn": {
+          "reservedClientid": "com.googleusercontent.apps.375818050692-d9fqfom3odudrt5tbc3nbtovac739cqu"
+        }
+      },
+      "googleServicesFile": "./providers/GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "com.javacs.javacs",
+      "googleServicesFile": "./providers/google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
